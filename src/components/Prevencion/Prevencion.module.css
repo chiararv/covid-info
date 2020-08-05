@@ -62,14 +62,13 @@
 }
 .articleContainer{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #750d37;
-  padding: 3rem 4rem;
+  padding: 3rem 12rem;
 }
 .article{
-  flex-basis: 300px;
-  margin: 2rem 6rem;
+  flex-basis: 450px;
+  margin: 2rem 3rem;
   color: white;
 }

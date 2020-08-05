@@ -36,7 +36,7 @@ function App() {
 
 return (
   <Router>
-  <div style={{backgroundColor: '#119da4', height:'100vh'}}>
+  <div>
     <Toolbar  showSideDrawer={sideDrawerOpenHandler} />
     <SideDrawer open={showSideDrawer} closed={sideDrawerClosedHandler} />
 

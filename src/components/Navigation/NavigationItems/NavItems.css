@@ -4,6 +4,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   height: 100%;
   flex-direction: column;
 }
@@ -19,19 +20,20 @@
   margin: 10px 0;
   box-sizing: border-box;
   /* display: block; */
-  width: 100%;
+  /* width: 100%; */
 }
 
 .NavigationItem  *{
-  color: black;
+  color: white;
   text-decoration: none;
-  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
 }
-.NavigationItem--search{
+.NavigationItem input{
+  color: black;
   /* display: flex; */
   /* flex-direction: column-reverse; */
-  width:50%;
+  /* width:50%; */
   /* display: block; */
 }
 

@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container{
+  margin: 10rem auto;
+  height: 500px;
+  width: 900px;
+  background-color: #bbacc1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px 5px 22px 6px rgba(0,0,0,0.75);
+}
+.text{
+  padding: 5rem 3rem;
+}
+.text h1{
+  margin: 1rem 0;
+}
+.chart{
+  height: 400px;
+}

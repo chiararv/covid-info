@@ -17,23 +17,16 @@ constructor(props){
   //   legendPosition:'right',
   //   location:'City'
   // }
-
+  
   render(){
     return (
       <div className="chart">
         <Pie
           data={this.state.chartData}
           redraw
+          width={400}
+          height={400}
           options={{
-            // title:{
-            //   display:this.props.displayTitle,
-            //   text:'Largest Cities In '+this.props.location,
-            //   fontSize:25
-            // },
-            // legend:{
-            //   display:this.props.displayLegend,
-            //   position:this.props.legendPosition
-            // }
             
           }}
         />

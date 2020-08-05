@@ -3,6 +3,7 @@ import { useParams, Route } from 'react-router-dom';
 import Axios from 'axios';
 import Chart from "../Chart"
 import country from '../../countries'
+import classes from './Pais.module.css';
 
 
 const Pais = () => {
@@ -53,23 +54,12 @@ const Pais = () => {
   
 
   return (  
-      <div>
-      <h1>{countryInfo.Country}</h1>
-    {charInfo !== null && <Chart  chartData={charInfo}/> }  
-      {/* {   countryInfo.map(info => (
-        <div>
-          <h5>{info.Date}</h5>
-          <div>
-            <p>Casos Totales: {info.Confirmed}</p>
-            <p>Enfermos: {info.Active} </p>
-            <p>Fallecidos: {info.Deaths}</p>
-            <p>Recuperaods: {info.Recovered}</p>
-          </div>
-        <div className="data">
-         <Chart  chartData={chartInfo}/> 
+      <div className={classes.container}>
+        <div className={classes.text}>
+         <h1>{countryInfo.Country}</h1>
+         <p>Casos totales:{countryInfo.Confirmed}</p>
         </div>
-        </div> 
-        ))} */}
+          {charInfo !== null && <Chart  chartData={charInfo}/> }  
       </div>
     
   )
