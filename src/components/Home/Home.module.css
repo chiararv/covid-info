@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  width: 100%;
+  background-color: #119da4;
+  color: #c1cfda;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  /* width: 100%; */
+  margin: 9rem 2rem;
+}
+.headerTitle{
+  width: 50%;
+  text-align: center;
+  padding: .5rem;
+  font-size: 100px;
+  
+}
+svg{
+  height: 100%;
+  width: 100%;
+
+}
+.mapContainer{
+  width: 50%;
+  height: 100%;
+}
+.info{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+.globalData{
+  /* width: 100%; */
+  margin: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 25px;
+}
+
+h2{
+  margin-bottom: 1.5rem;
+  font-size: 30px;
+}
