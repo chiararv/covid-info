@@ -5,21 +5,42 @@
   font-size: 20px;
 }
 .container{
-  margin: 10rem auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.card{
   height: 500px;
-  width: 900px;
-  background-color: #bbacc1;
+  width: 100%;
+  background-color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 5px 5px 22px 6px rgba(0,0,0,0.75);
+  color: black;
+  /* border: 3px solid #750d37 */
+  /* box-shadow: 5px 5px 22px 6px rgba(0,0,0,0.75); */
 }
 .text{
   padding: 5rem 3rem;
+}
+.underlined{
+  /* font-weight: bold; */
+  text-decoration: underline;
+  padding-left: 0;
 }
 .text h1{
   margin: 1rem 0;
 }
 .chart{
   height: 400px;
+}
+
+.newsContainer{
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
 }

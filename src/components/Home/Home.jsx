@@ -12,7 +12,10 @@ const Home = ({data}) => {
         
     <main className={classes.container}>
       <header className={classes.header}>
-        <h1 className={classes.headerTitle}>COVID‑19</h1>
+        <div>
+          <h1 className={classes.headerTitle}>COVID‑19</h1>
+          <p>Haz click en el mapa para ver información de cada país.</p>
+        </div>
         <div className={classes.mapContainer}>
           <MapChart data={data} setTooltipContent={setContent} />
           <ReactTooltip>{content}</ReactTooltip>

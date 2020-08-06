@@ -1,4 +1,5 @@
 import React, { memo, useState, useEffect } from "react";
+import { useHistory } from "react-router-dom"
 import {
   ComposableMap,
   Geographies,
@@ -13,6 +14,8 @@ const geoUrl =
 const MapChart = ({ setTooltipContent, data }) => {
 
   const [country, setCountry] = useState(null)
+  let history = useHistory()
+
   
   // country !== null && country !== undefined && console.log(i)
   /*
@@ -29,19 +32,18 @@ const MapChart = ({ setTooltipContent, data }) => {
                   key={geo.rsmKey}
                   geography={geo}
                   onMouseEnter={() => {
-                    
-                    const { NAME } = geo.properties;
-                    const i = data.Countries.find(element => element.Country === NAME)
-                   console.log(i)
-                    if(i !== null && i !== undefined){
-                      setTooltipContent(`${i.Country} - casos confirmados: ${i.TotalConfirmed}`)
-                    }else{
-                
-                      setTooltipContent(`información no disponible`);
-                    }
+                    const { ISO_A2 } = geo.properties;
+                    const i = data.Countries.find(element => element.CountryCode === ISO_A2)
+                    setTooltipContent(i ? `${i.Country} - casos confirmados: ${i.TotalConfirmed}` : ` información no disponible`)
                   }}
                   onMouseLeave={() => {
                     setTooltipContent("");
+                  }}
+                  onClick={() => {
+                    const { ISO_A2 } = geo.properties;
+                    const i = data.Countries.find(element => element.CountryCode === ISO_A2)
+                    history.push('/pais/' + i.Country)
+                    
                   }}
                   style={{
                     default: {

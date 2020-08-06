@@ -36,7 +36,7 @@ function App() {
 
 return (
   <Router>
-  <div>
+  <div style={{height: '100%', width: '100%', minHeight: '100vh', backgroundColor: '#750d37', overflowX: 'hidden', fontFamily:'"Mulish" , sans-serif'}}>
     <Toolbar  showSideDrawer={sideDrawerOpenHandler} />
     <SideDrawer open={showSideDrawer} closed={sideDrawerClosedHandler} />
 
@@ -50,7 +50,7 @@ return (
     */}
     <Switch>
       <Route exact path="/">
-     {data && <Home  data={data}/>}
+        {data && <Home  data={data}/>}
       </Route>
       <Route path="/prevencion">
         <Prevencion />
@@ -71,6 +71,6 @@ export default App;
 /*
 https://api.covid19api.com/live/country/south-africa/status/confirmed/date/2020-03-21T13:13:30Z
 
-
+72eb89b9bc9e4d63be5c0f5009554d87
 
 */

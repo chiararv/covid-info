@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 700px;
+  color: white;
+}
+.articleInfo, .source{
+  padding: 1rem;
+  
+}
+.author{
+  padding-right: 0;
+}
+p ~ img{
+  height: 150px;
+  /* object-fit: contain; */
+}
+.decription{
+  padding: .5rem;
+}
+
+.container span{
+  padding: .5rem 0 .5rem .5rem;
+}
+span a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 150px;
+  text-align: center;
+  background-color: thistle;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 13px 5px;
+}
+.content{
+  display: flex;
+  justify-content: space-around;
+}
+.content p{
+  width: 300px;
+}
