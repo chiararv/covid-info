@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Prevencion.module.css'
 import { BsFillPersonFill } from 'react-icons/bs'
-import { FaRulerHorizontal, FaHands } from 'react-icons/fa'
+import { FaHands } from 'react-icons/fa'
 import { GiTap , GiNinjaMask} from 'react-icons/gi'
 import { MdFace } from 'react-icons/md'
 

@@ -5,7 +5,6 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Prevencion from './components/Prevencion/Prevencion';
 import Pais from './components/Pais/Pais';
 import Home from './components/Home/Home';
-import axios from 'axios'
 import summary from './summary'
 
 

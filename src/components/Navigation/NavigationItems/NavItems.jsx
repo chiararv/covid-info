@@ -1,36 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import Home from "../../Home/Home"
 import Buscador from "../../Buscador/Buscador"
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link, 
-  useParams
-} from "react-router-dom"
-import Prevencion from '../../Prevencion/Prevencion';
-import Pais from '../../Pais/Pais'
+import { Link } from "react-router-dom"
 import './NavItems.css'
 
 
 
 function NavItems() {
-const [data, setData] = useState(null);
+// const [data, setData] = useState(null);
 const [countries, setCountries] = useState(null);
 
 
 
-useEffect( () => {
+// useEffect( () => {
 
-  axios
-    .get('https://api.covid19api.com/summary')
-    .then((response) => {
+//   axios
+//     .get('https://api.covid19api.com/summary')
+//     .then((response) => {
 
-      setData(response.data)
-    })
+//       setData(response.data)
+//     })
 
-},[]) 
+// },[]) 
 
 useEffect( () => {
 

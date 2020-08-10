@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useParams, Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Axios from 'axios';
 import Chart from "../Chart"
-import country from '../../countries'
 import classes from './Pais.module.css';
 import News from '../news/News';
 import Loader from '../UI/Loader/Loader';

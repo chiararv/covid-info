@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Buscador from '../Buscador/Buscador';
 import ReactTooltip from "react-tooltip";
 import MapChart from '../Map/MapChart';
 import classes from './Home.module.css'

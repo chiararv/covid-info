@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from "react";
+import React  from "react";
 import { useHistory } from "react-router-dom"
 import {
   ComposableMap,
@@ -13,7 +13,7 @@ const geoUrl =
 
 const MapChart = ({ setTooltipContent, data }) => {
 
-  const [country, setCountry] = useState(null)
+
   let history = useHistory()
 
   

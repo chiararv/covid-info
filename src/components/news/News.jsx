@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react'
-import Axios from 'axios'
+import React from 'react'
 import classes from './News.module.css'
 
 const News = ({title, source, description, author, img, web, date}) => {
